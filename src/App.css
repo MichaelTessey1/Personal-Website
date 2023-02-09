@@ -1,38 +1,64 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 90%;
+  border: 1px solid white;
+  font-family: "Neue Montreal";
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/* header */
+header {
+  width: 100%;
+  height: 15%;
+  text-align: right; 
+  line-height: 1;
+}
+h1 {
+  padding-right: 3%;
+  font-weight: 100;
+}
+h4 {
+  padding-right: 3%;
+  font-weight: 100;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* content */
+.content {
+  height: 75%;
+  width: 100%;
+  border: 1px solid white;
+  position: relative;
+  /* opacity: 0;
+  transition: opacity 0.5s ease-out; */
+}
+
+.content-detail {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.content-detail.active {
+  opacity: 1;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  font-size: small;
+  width: 100%;
+  bottom: 0%;
+  text-align: right;
+}
+
+p {
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-right: 3%;
 }
