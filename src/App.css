@@ -1,44 +1,130 @@
 .App {
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 95%;
-  height: 90%;
+  height: 93%;
   border: 1px solid white;
-  font-family: "Neue Montreal";
+  border-bottom: 0px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
-/* header */
+/*  --------- header --------- */
 header {
   width: 100%;
-  height: 15%;
+  flex: 1.2;
   text-align: right; 
   line-height: 1;
+  /* border: 2px solid yellow; */
 }
-h1 {
+.name {
   padding-right: 3%;
+  margin-bottom: 15px;
+  font-size: 3em;
   font-weight: 100;
 }
-h4 {
+.sub-header-container {
   padding-right: 3%;
-  font-weight: 100;
+  margin-top: 0;
+  font-weight: 300;
 }
 
-/* content */
-.content {
-  height: 75%;
+
+
+
+
+/* -------------- content -------------------*/
+.content-container {
+  flex: 6;
   width: 100%;
-  border: 1px solid white;
   position: relative;
-  /* opacity: 0;
-  transition: opacity 0.5s ease-out; */
+  display: flex;
+  border: 1px solid white;
+}
+
+nav {
+  flex: 1;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul li {
+  --c: #99FFFF;
+  color: var(--c);
+  font-size: 16px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 12em;
+  height: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+
+nav ul li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+nav ul li:hover {
+  color: black;
+}
+
+nav ul li:hover span {
+  transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+  --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+  --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+  --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+  --n: 4;
+}
+
+.content {
+  flex: 5;
+  position: relative;
 }
 
 .content-detail {
+  position: absolute;
   height: 100%;
   width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
@@ -49,9 +135,15 @@ h4 {
   opacity: 1;
 }
 
-/* footer */
+
+
+
+
+
+/* ---------------- footer -------------------- */
 footer {
-  position: absolute;
+  flex: .3;
+  position: relative;
   font-size: small;
   width: 100%;
   bottom: 0%;
@@ -59,6 +151,5 @@ footer {
 }
 
 p {
-  font-family: 'Noto Sans JP', sans-serif;
   padding-right: 3%;
 }

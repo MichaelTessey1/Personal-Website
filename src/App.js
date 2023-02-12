@@ -1,17 +1,23 @@
 import React, {useState} from 'react';
+import { TypeAnimation } from 'react-type-animation';
+
+
 import './App.css';
 import Landing from './content/Landing/Landing.js'
 import About from './content/About/About.js'
 import Projects from './content/Projects/Projects.js'
-import Skills from './content/Skills/Skills.js'
+import Experience from './content/Experience/Experience.js'
+
 
 const App = () => {
+
+  //Animation for content on the page
   const [index, setIndex] = useState(0);
   const contents = [
     "Landing",
     "About",
     "Projects",
-    "Ski"
+    "Experience"
   ];
 
   const handleScroll = (event) => {
@@ -23,22 +29,61 @@ const App = () => {
       setIndex(index - 1 < 0 ? contents.length - 1 : index - 1);
     }
   };
+
+  // const changeContent = (id) => {}
+
   console.log(index)
   return (
     <div className="App">
-      
+      {/* ----------------------------- HEADER ------------------------------------ */}
       <header>
-        <h1 className="Name">Michael Tse</h1>
-        <h4>Web Developer & SE</h4>
+
+        <p className="name">Michael Tse</p>
+
+        <div className="sub-header-container">
+          <TypeAnimation
+            sequence={['Web Developer', 2000, 'Software Engineer', 2000, 'Gym Enthusiast',
+                      2000, 'Hunter Graduate', 2000]}
+            style={{ fontSize: '1em' }}
+            wrapper="div"
+            repeat={Infinity} 
+          />
+        </div>
+
       </header>
 
-      <div className = "content" onWheel={handleScroll}>
-        <div className = {`content-detail ${index === 0 ? 'active' : ''}`}>{index === 0 ? <Landing/> : index >=0 ? "" : <div>Loading</div>}</div>
-        <div className = {`content-detail ${index === 1 ? 'active' : ''}`}>{index === 1 ? <About/> : index >=0 ? "" : <div>Loading</div>}</div>
-        <div className = {`content-detail ${index === 2 ? 'active' : ''}`}>{index === 2 ? <Projects/> : index >=0 ? "" : <div>Loading</div>}</div>
-        <div className = {`content-detail ${index === 3 ? 'active' : ''}`}>{index === 3 ? <Skills/> : index >=0 ? "" : <div>Loading</div>}</div>
-      </div>
+      {/* ---------------------------- NAV & CONTENT --------------------------------- */}
+      <div className = "content-container">
+        <nav>
+          <ul>
+            <li>
+              Home
+              <span></span><span></span><span></span><span></span>
+            </li>
+            <li>
+              About Me
+              <span></span><span></span><span></span><span></span>
+            </li>
+            <li>
+              Projects
+              <span></span><span></span><span></span><span></span>
+            </li>
+            <li>
+              Experiences
+              <span></span><span></span><span></span><span></span>
+            </li>
+          </ul>
+        </nav>
 
+        <div className = "content" onWheel={handleScroll}>
+          {index === 0 ? <div className = {`content-detail ${index === 0 ? 'active' : ''}`}><Landing/></div> : <div className = {`content-detail`}><Landing/></div>}
+          {index === 1 ? <div className = {`content-detail ${index === 1 ? 'active' : ''}`}><About/></div> : <div className = {`content-detail`}><About/></div>}
+          {index === 2 ? <div className = {`content-detail ${index === 2 ? 'active' : ''}`}><Projects/></div> : <div className = {`content-detail`}><Projects/></div>}
+          {index === 3 ? <div className = {`content-detail ${index === 3 ? 'active' : ''}`}><Experience/></div> : <div className = {`content-detail`}><Experience/></div>}
+        </div>
+      </div>
+      
+      {/* ----------------------------- FOOTER ---------------------------------------- */}
       <footer>
         <p>
           Copyright &copy; 2023 Michael Tse. All rights are resevered
