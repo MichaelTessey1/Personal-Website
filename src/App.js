@@ -30,11 +30,70 @@ const App = () => {
     }
   };
 
-  // const changeContent = (id) => {}
+  const changeContent = (id) => {
+    setIndex(id);
+    console.log('CONTENT, ', id)
+  }
 
   console.log(index)
   return (
     <div className="App">
+      {/* ------------------------------ STARS  ----------------------------------- */}
+
+      <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+
+
       {/* ----------------------------- HEADER ------------------------------------ */}
       <header>
 
@@ -54,21 +113,22 @@ const App = () => {
 
       {/* ---------------------------- NAV & CONTENT --------------------------------- */}
       <div className = "content-container">
+
         <nav>
           <ul>
-            <li>
+            <li onClick = {() => changeContent(0)}>
               Home
               <span></span><span></span><span></span><span></span>
             </li>
-            <li>
+            <li onClick = {() => changeContent(1)}>
               About Me
               <span></span><span></span><span></span><span></span>
             </li>
-            <li>
+            <li onClick = {() => changeContent(2)}>
               Projects
               <span></span><span></span><span></span><span></span>
             </li>
-            <li>
+            <li onClick = {() => changeContent(3)}>
               Experiences
               <span></span><span></span><span></span><span></span>
             </li>
@@ -81,6 +141,7 @@ const App = () => {
           {index === 2 ? <div className = {`content-detail ${index === 2 ? 'active' : ''}`}><Projects/></div> : <div className = {`content-detail`}><Projects/></div>}
           {index === 3 ? <div className = {`content-detail ${index === 3 ? 'active' : ''}`}><Experience/></div> : <div className = {`content-detail`}><Experience/></div>}
         </div>
+
       </div>
       
       {/* ----------------------------- FOOTER ---------------------------------------- */}
