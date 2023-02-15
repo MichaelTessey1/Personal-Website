@@ -13,7 +13,7 @@ const Landing = () => {
           <div className = "t3">I am a Full Stack Developer from New York</div> <br/>
           <div className = "t4">and I absolutely love working with <FaReact size="20px" color="#61DAFB" /></div>
         </div>
-        <img src={Baji} alt="anime character that looks like me" className = "baji"/>
+        <img src={Baji} alt="anime character that represents me" className = "baji"/>
       </div>
     </div>
   );
