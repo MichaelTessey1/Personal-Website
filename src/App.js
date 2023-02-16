@@ -32,10 +32,8 @@ const App = () => {
 
   const changeContent = (id) => {
     setIndex(id);
-    console.log('CONTENT, ', id)
   }
 
-  console.log(index)
   return (
     <div className="App">
       {/* ------------------------------ STARS  ----------------------------------- */}
@@ -138,8 +136,8 @@ const App = () => {
         <div className = "content" onWheel={handleScroll}>
           {index === 0 ? <div className = {`content-detail ${index === 0 ? 'active' : ''}`}><Landing/></div> : <div className = {`content-detail`}><Landing/></div>}
           {index === 1 ? <div className = {`content-detail ${index === 1 ? 'active' : ''}`}><About/></div> : <div className = {`content-detail`}><About/></div>}
-          {index === 2 ? <div className = {`content-detail ${index === 2 ? 'active' : ''}`}><Projects/></div> : <div className = {`content-detail`}><Projects/></div>}
           {index === 3 ? <div className = {`content-detail ${index === 3 ? 'active' : ''}`}><Experience/></div> : <div className = {`content-detail`}><Experience/></div>}
+          {index === 2 ? <div className = {`content-detail ${index === 2 ? 'active' : ''}`}><Projects/></div> : <div className = {`content-detail`}><Projects/></div>}
         </div>
 
       </div>

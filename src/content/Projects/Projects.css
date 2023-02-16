@@ -8,3 +8,57 @@
     flex-direction: column;
     margin-top: -10px;
 }
+
+.projects-wrap {
+    border: 1px solid #99FFFF;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.5);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    flex: 5;
+    width: 650px;
+    height: 400px;
+    margin-left: 5%;
+}
+
+.ProjImg {
+    background-image: url(../Images/codenames.png);
+    object-fit: cover;
+    height: 400px;
+}
+
+.project-description {
+    flex: 4;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pd-wraper {
+    padding: 10%;
+}
+
+.pd-name {
+    color:#99FFFF;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.pd-icons-container {
+    display: flex;
+}
+
+.pd-icon {
+    width: 40px;
+    height: 40px;
+    margin: 5%;
+}
+
+
+

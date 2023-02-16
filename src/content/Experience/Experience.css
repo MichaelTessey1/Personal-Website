@@ -8,3 +8,68 @@
     flex-direction: column;
     margin-top: -10px;
 }
+
+.e-wrap {
+    border: 1px solid #99FFFF;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.5);
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5%;
+}
+
+.maco-e {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.m-img {
+    flex: 1;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    padding-left: 5%;
+}
+
+.maco-content {
+    flex: 3;
+    padding-left: 5%;
+    font-size: 20px;
+}
+
+.maco-title {
+    font-size: 40px;
+    color: #99FFFF;
+}
+
+.ga-e {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ga-content {
+    flex: 3;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 20px;
+}
+
+.ga-title {
+    font-size: 40px;
+    color: #99FFFF;
+}
+
+.g-img {
+    flex: 1;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    padding-right: 5%;
+}
