@@ -41,6 +41,7 @@ const Projects = () => {
               <div className="pd-icons-container">
                 <img src="https://cdn-icons-png.flaticon.com/512/7439/7439488.png" alt="React icon" className="pd-icon"/>
               </div>
+              <a href="https://codenames21.herokuapp.com/" className="links">Link</a>
             </div> : ""}
 
           {currentSlide === 1 ? 
@@ -57,6 +58,7 @@ const Projects = () => {
                 <img src="https://cdn-icons-png.flaticon.com/512/873/873120.png" alt="heroku" className="pd-icon"/>
                 <img src="https://user-images.githubusercontent.com/7853266/44114706-9c72dd08-9fd1-11e8-8d9d-6d9d651c75ad.png" alt="postman" className="pd-icon"/>
               </div>
+              <a href="https://codenames21.herokuapp.com/" className="links">Link</a>
             </div> : ""}
 
           {currentSlide === 2 ? 
@@ -73,6 +75,7 @@ const Projects = () => {
                 <img src="https://www.pngfind.com/pngs/m/344-3441378_ruby-on-rails-ruby-on-rails-logo-png.png" alt="Rails" className="pd-icon"/>
                 <img src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png" alt="Firebase" className="pd-icon"/>
               </div>
+              <a href="https://expo.dev/@michaeltessey1/photowing" className="links">Link</a>
             </div> : ""}
 
           {currentSlide === 3 ? 
@@ -89,6 +92,7 @@ const Projects = () => {
                 <img src="https://cdn-icons-png.flaticon.com/512/7439/7439488.png" alt="React icon" className="pd-icon"/>
                 <img src="https://cdn-icons-png.flaticon.com/512/8297/8297437.png" alt="API icon" className="pd-icon"/>
               </div>
+              <a href="http://lewd-yoke.surge.sh/" className="links">Link</a>
             </div> : ""}
 
         </div>
