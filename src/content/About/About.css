@@ -66,6 +66,10 @@
     flex: 1;
     height: 100%;
     margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .about-tools {
     color:#99FFFF;
@@ -84,4 +88,193 @@
     width: 60px;
     height: 60px;
     padding: 6%;
+}
+
+@media screen and (max-width: 1600px) {
+    .about-me {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about-title {
+        font-size: 45px;
+    }
+    .about-content {
+        font-size: 15px;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .about-extras-info {
+        font-size: 15px;
+    }
+
+    .about-tools {
+        font-size: 45px;
+    }
+
+    .tools-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about-me {
+        padding: 3%;
+    }
+    .about-title {
+        font-size: 40px;
+    }
+    .about-content {
+        font-size: 13px;
+    }
+
+
+    .about-tools {
+        font-size: 40px;
+    }
+
+    .about-extras-info {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about-extras {
+        padding-top: 2%;
+    }
+    .about-content {
+        font-size: 15px;
+    }
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+    .about-extras-info {
+        font-size: 10px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .about-title {
+        font-size: 30px;
+    }
+
+    .about-tools {
+        font-size: 30px;
+    }
+
+    .tools-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about-content {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-wrap {
+        width: 95%;
+    }
+    .about-content {
+        font-size: 12px;
+    }
+
+    .tools-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-wrap {
+        height: 70%;
+    }
+    .about-content {
+        font-size: 9px;
+    }
+
+    .tools-icon {
+        width: 22px;
+        height: 22px;
+    }
+    .about-extras-info {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .About {
+        margin-top: -8%;
+    }
+    .about-wrap {
+        height: 95%;
+        flex-direction: column;
+    }
+    .about-me {
+        flex: 1;
+    }
+    .about-title {
+        font-size: 20px;
+    }
+
+    .tools {
+        flex: 1;
+        margin-right: 0;
+        width: 100%;
+        padding: 0;
+        margin-top: -10px;
+    }
+
+    .about-tools {
+        font-size: 20px;
+    }
+    .tools-icons-container {
+        width: 100%;
+    }
+    .tools-icon {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 422px) {
+    .tools-icon {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-content {
+        font-size: 8px;
+    }
+    .about-extras-info {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 337px) {
+    .tools-icon {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 281px) {
+    .tools-icon {
+        width: 9px;
+        height: 9px;
+    }
 }

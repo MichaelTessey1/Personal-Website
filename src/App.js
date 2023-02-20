@@ -144,7 +144,7 @@ const App = () => {
       
       {/* ----------------------------- FOOTER ---------------------------------------- */}
       <footer>
-        <p>
+        <p className="foot">
           Copyright &copy; 2023 Michael Tse. All rights are resevered
         </p>
       </footer>

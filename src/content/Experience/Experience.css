@@ -73,3 +73,87 @@
     height: 300px;
     padding-right: 5%;
 }
+
+@media screen and (max-width: 1700px) {  
+    .m-img, .g-img {
+        height: 60%;
+    }
+
+    .maco-title, .ga-title {
+        font-size: 35px;
+    }
+
+    .maco-content, .ga-content {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {  
+    .m-img, .g-img {
+        height: 50%;
+    }
+
+    .maco-title, .ga-title {
+        font-size: 30px;
+    }
+
+    .maco-content, .ga-content {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1070px) {  
+    .maco-e, .ga-e {
+        height: 20%;
+    }
+    .m-img, .g-img {
+        height: 45%;
+    }
+
+    .maco-title, .ga-title {
+        font-size: 30px;
+    }
+
+    .maco-content, .ga-content {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .maco-title, .ga-title {
+        font-size: 20px;
+    }
+
+    .maco-content, .ga-content {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .e-wrap {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .maco-title, .ga-title {
+        font-size: 15px;
+    }
+
+    .maco-content, .ga-content {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .m-img, .g-img {
+        height: 20%;
+    }
+    .maco-title, .ga-title {
+        font-size: 12px;
+    }
+
+    .maco-content, .ga-content {
+        font-size: 7px;
+    }
+}

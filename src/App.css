@@ -385,7 +385,6 @@
   transform: translate(-50%, -50%);
   width: 95%;
   height: 95%;
-  /* border: 1px solid white; */
   border-bottom: 0px;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   color: white;
@@ -528,4 +527,77 @@ footer {
 
 p {
   padding-right: 3%;
+}
+
+/* @media screen and (max-width: 1200px) {
+  nav ul {
+
+  }
+} */
+
+/* ----------------- responsive ------------------ */
+
+@media screen and (max-width: 1000px) {
+  header {
+    flex: 1;
+  }
+
+  .content-container {
+    flex-direction: column;
+    flex: 5;
+  }
+
+  nav {
+    height: 100px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .App {
+    top: 47%;
+  }
+  nav {
+    padding-top: 2%;
+  }
+  nav ul li {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  nav {
+    padding-top: 5%;
+  }
+}
+
+
+
+@media screen and (max-width: 550px) {
+  nav ul li {
+    font-size: 10px;
+  }
+  .foot {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .name {
+    font-size: 2em;
+  }
+  nav ul li {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+
+  nav ul {
+    padding-top: 0;
+  }
 }
