@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+import aria from '../Images/Aria.png'
 import codenames from '../Images/codenames.png'
 import photowing from '../Images/photowing.png'
 import anistorm from '../Images/anistorm.png'
@@ -27,7 +28,7 @@ const Projects = () => {
     <div className = "Projects">
       <div className = "projects-wrap">
         <Slider {...settings} className="slider">
-          <img className='ProjImg' src={codenames} alt="Codenames"></img>
+          <img className='ProjImg' src={aria} alt="Aria"></img>
           <img className='ProjImg' src={codenames} alt="Codenames"></img>
           <img className='ProjImg' src={photowing} alt="PhotoWing"></img>
           <img className='ProjImg' src={anistorm} alt="Anistorm"></img>
@@ -36,12 +37,17 @@ const Projects = () => {
         <div className="project-description">
           {currentSlide === 0 ? 
             <div className="pd-wraper">
-              <div className="pd-name">IN PROGRESS</div>
-              <p className="pd-description">Currently working on a new project. Codenames image will be used for now.</p>
+              <div className="pd-name">Aria</div>
+              <p className="pd-description">Aria is a web application that allows users to join a virtual room with their friends, 
+                where they can collectively listen to music or watch YouTube videos. Incorporated chat communication to enhance social 
+                interaction within the virtual room. Created an engaging platform that provides a collaborative and interactive experience 
+                for users to enjoy music and video content together.</p>
               <div className="pd-icons-container">
                 <img src="https://cdn-icons-png.flaticon.com/512/7439/7439488.png" alt="React icon" className="pd-icon"/>
+                <img src="https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png" alt="Firebase" className="pd-icon"/>
+                <img src="https://static-00.iconduck.com/assets.00/brand-socket-io-icon-512x512-3zrjje7c.png" alt="Socket io icon" className="pd-icon"/>
               </div>
-              <a href="https://codenames21.herokuapp.com/" className="links">Link</a>
+              <a href="https://youtu.be/nkq0dWIijSU" className="links">Demo</a>
             </div> : ""}
 
           {currentSlide === 1 ? 
