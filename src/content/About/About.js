@@ -10,8 +10,8 @@ const About = () => {
           <h1 className = "about-title">About Me</h1>
           <div className = "about-content">
             My name is <span className="highlight">Michael Tse</span> and I am a recent graduate from Hunter College with a Computer Science Degree.
-            I've also completed General Assemblys Web Development Immersive. I've become passionate about Web Development and dedicated myself
-            into working within the Web Development field and I hope go gain new and meaningful experiences as I pursue this career.
+            I've also completed General Assemblys Web Development Immersive. I am passionate about Web Development and have dedicated myself
+            into working within the Web Development space and I hope to gain new and meaningful experiences as I pursue this career.
           </div>
           <div className = "about-extras">
             <div className = "about-extras-info"><img src = "https://cdn-icons-png.flaticon.com/512/1176/1176454.png" className = "icon" alt="location icon"/>  Location: New York, US</div>
